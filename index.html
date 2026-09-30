@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Full-Stack Developer | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <span class="nav-logo">dev<span class="accent">.</span></span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="about">
+    <div class="container">
+      <div class="hero-content">
+        <p class="hero-greeting">Hi, I'm a</p>
+        <h1 class="hero-title">Full-Stack <br /><span class="accent">Software Developer</span></h1>
+        <p class="hero-bio">
+          Building production-grade applications in Next.js, TypeScript, Go, and Python,
+          with PostgreSQL backends deployed via CI/CD on Vercel. I design REST APIs,
+          authentication systems, and role-based access control for multi-user apps.
+        </p>
+        <div class="hero-links">
+          <a href="https://github.com" target="_blank" rel="noopener" class="btn btn-primary">GitHub</a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
+          <a href="https://dev.to" target="_blank" rel="noopener" class="btn btn-outline">Dev.to</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="code-card">
+          <div class="code-card-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          </div>
+          <pre class="code-block"><code><span class="kw">const</span> developer = {
+  <span class="prop">stack</span>: [<span class="str">"Next.js"</span>, <span class="str">"Go"</span>, <span class="str">"Python"</span>],
+  <span class="prop">db</span>: <span class="str">"PostgreSQL"</span>,
+  <span class="prop">deploy</span>: <span class="str">"Vercel + CI/CD"</span>,
+  <span class="prop">loves</span>: <span class="str">"shipping features"</span>,
+};</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3 class="skill-cat">Languages</h3>
+          <div class="tags">
+            <span class="tag">TypeScript</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Go</span>
+            <span class="tag">Python</span>
+            <span class="tag">SQL</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3 class="skill-cat">Frameworks</h3>
+          <div class="tags">
+            <span class="tag">Next.js</span>
+            <span class="tag">React</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">Gin</span>
+            <span class="tag">Django REST</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3 class="skill-cat">Tools & Infrastructure</h3>
+          <div class="tags">
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Git</span>
+            <span class="tag">GitHub Actions</span>
+            <span class="tag">Vercel</span>
+            <span class="tag">Linux</span>
+            <span class="tag">JWT</span>
+            <span class="tag">OAuth2.0</span>
+            <span class="tag">RBAC</span>
+            <span class="tag">REST APIs</span>
+            <span class="tag">Webhooks</span>
+            <span class="tag">CI/CD</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-meta">
+            <span class="timeline-date">Jan 2026 – Present</span>
+          </div>
+          <div class="timeline-body">
+            <h3 class="timeline-role">Full-Stack Developer <span class="accent">(Apprentice)</span></h3>
+            <p class="timeline-company">Zone01 Kisumu</p>
+            <ul class="timeline-points">
+              <li>Built and deployed full-stack apps in Next.js, TypeScript, Go, and Python to production on Vercel using CI/CD pipelines.</li>
+              <li>Implemented REST APIs with JWT authentication and RBAC for secure multi-user access.</li>
+              <li>Integrated Claude and OpenAI APIs into product features using an AI-assisted development workflow.</li>
+              <li>Collaborated in a peer-to-peer team of 5 developers — code reviews and hackathons.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-meta">
+            <span class="timeline-date">May 2023 – Aug 2023</span>
+          </div>
+          <div class="timeline-body">
+            <h3 class="timeline-role">IT Attachment</h3>
+            <p class="timeline-company">Sisi Tech, Nairobi</p>
+            <ul class="timeline-points">
+              <li>Worked with cross-platform developers to deliver effective technical solutions.</li>
+              <li>Contributed to Wavy Wallet, a fintech mobile app that reduced financial mismanagement by 80%.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-header">
+            <h3 class="project-name">Story Forge</h3>
+            <div class="project-tags">
+              <span class="tag tag-sm">TypeScript</span>
+              <span class="tag tag-sm">PostgreSQL</span>
+              <span class="tag tag-sm">Supabase</span>
+            </div>
+          </div>
+          <p class="project-desc">
+            A full-stack blogging platform giving creators a simple way to write, publish, and manage content
+            while providing readers a centralized place to discover and engage with articles.
+          </p>
+          <ul class="project-points">
+            <li>Multi-creator support with content publishing and blog management</li>
+            <li>Scalable user experience with a smooth content discovery flow</li>
+          </ul>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <h3 class="project-name">Morio AI</h3>
+            <div class="project-tags">
+              <span class="tag tag-sm">React</span>
+              <span class="tag tag-sm">Python</span>
+            </div>
+          </div>
+          <p class="project-desc">
+            An AI-powered customer care chat assistant helping businesses automate support, answer FAQs,
+            and deliver fast conversational assistance.
+          </p>
+          <ul class="project-points">
+            <li>Context-aware AI responses reducing manual handling of routine inquiries</li>
+            <li>Improved response times and reduced load on support teams</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION & CERTS -->
+  <section class="section section-alt" id="education">
+    <div class="container">
+      <h2 class="section-title">Education & Certifications</h2>
+      <div class="edu-grid">
+        <div class="edu-card">
+          <span class="edu-icon">🎓</span>
+          <div>
+            <h3 class="edu-title">Diploma in Information Communication & Technology</h3>
+            <p class="edu-sub">Thika Technical Institute &mdash; Graduated December 2024</p>
+          </div>
+        </div>
+        <div class="edu-card">
+          <span class="edu-icon">⚡</span>
+          <div>
+            <h3 class="edu-title">Bitcoin Lightning Developer Bootcamp</h3>
+            <p class="edu-sub">Africa Free Routing Certification</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container contact-container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="contact-sub">Open to new opportunities, collaborations, and interesting problems to solve.</p>
+      <div class="contact-links">
+        <a href="mailto:email@example.com" class="contact-item">
+          <span class="contact-icon">✉️</span>
+          <span>email@example.com</span>
+        </a>
+        <a href="tel:+254746512926" class="contact-item">
+          <span class="contact-icon">📱</span>
+          <span>+254 7465 129 26</span>
+        </a>
+        <a href="https://github.com" target="_blank" rel="noopener" class="contact-item">
+          <span class="contact-icon">🐙</span>
+          <span>GitHub</span>
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener" class="contact-item">
+          <span class="contact-icon">💼</span>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://dev.to" target="_blank" rel="noopener" class="contact-item">
+          <span class="contact-icon">📝</span>
+          <span>Dev.to</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Built with HTML, CSS &amp; a bit of love.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

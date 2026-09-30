@@ -1,0 +1,73 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.text {
+  font-size: 1.1rem;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.contactLink {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1rem 1.2rem;
+  color: var(--text);
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.contactLink:hover {
+  border-color: var(--accent);
+  color: var(--text);
+  transform: translateX(4px);
+}
+
+.linkIcon {
+  color: var(--accent);
+  display: flex;
+  flex-shrink: 0;
+}
+
+.linkInfo {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+
+.linkLabel {
+  font-size: 0.72rem;
+  color: var(--muted);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.linkValue {
+  font-size: 0.88rem;
+  color: var(--text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.contactLink svg:last-child {
+  color: var(--muted);
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .grid { grid-template-columns: 1fr; gap: 2rem; }
+}
